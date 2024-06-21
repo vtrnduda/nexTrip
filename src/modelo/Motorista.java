@@ -43,6 +43,16 @@ public class Motorista {
 	public void remover(Viagem viagem) {
 		viagens.remove(viagem);
 	}
+
+	@Override
+	public String toString() {
+		String result = "Motorista nome=" + nome + ", cnh=" + cnh ;
+		
+		for (Viagem v : viagens) 
+			result+= "viagem: " + v;
+		
+		return result;
+	}
 	
 	
 	
